@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 91de128ecd0990844968eb863bfadd6f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5646422513350543107
+    second: Green_onion_cut_0
+  - first:
+      213: -3655044422159073507
+    second: Green_onion_cut_1
+  - first:
+      213: 7423547682162634671
+    second: Green_onion_cut_2
+  - first:
+      213: 3234889667067479529
+    second: Green_onion_cut_3
+  - first:
+      213: 3143850769599946580
+    second: Green_onion_cut_4
+  - first:
+      213: -5074486898681425553
+    second: Green_onion_cut_5
+  - first:
+      213: -5608354936828555009
+    second: Green_onion_cut_6
+  - first:
+      213: -3324523961816911256
+    second: Green_onion_cut_7
+  - first:
+      213: 2627858933160170970
+    second: Green_onion_cut_8
+  - first:
+      213: 954803059268652144
+    second: Green_onion_cut_9
+  - first:
+      213: 7020131855695054113
+    second: Green_onion_cut_10
+  - first:
+      213: -8618450305876271041
+    second: Green_onion_cut_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Green_onion_cut_0
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1285
+        width: 182
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8f8ffd3a0e3a1b0800000000000000
+      internalID: -5646422513350543107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_1
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1354
+        width: 98
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f7fea967ca64dc0800000000000000
+      internalID: -3655044422159073507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_2
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1295
+        width: 121
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf6a78094db50760800000000000000
+      internalID: 7423547682162634671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_3
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1310
+        width: 153
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e583255303a4ec20800000000000000
+      internalID: 3234889667067479529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_4
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1368
+        width: 82
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fd7dc3e9331ab20800000000000000
+      internalID: 3143850769599946580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_5
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1318
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6158ba2d0dc399b0800000000000000
+      internalID: -5074486898681425553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_6
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1228
+        width: 111
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0960836ee1b22b0800000000000000
+      internalID: -5608354936828555009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_7
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1213
+        width: 157
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862f0a0221becd1d0800000000000000
+      internalID: -3324523961816911256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_8
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1273
+        width: 85
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad559d6d6c7087420800000000000000
+      internalID: 2627858933160170970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_9
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1221
+        width: 104
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c0a2ad254204d00800000000000000
+      internalID: 954803059268652144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_10
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1149
+        width: 207
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1258b1f7ab48c6160800000000000000
+      internalID: 7020131855695054113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_onion_cut_11
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1160
+        width: 137
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3063ebfb1d156880800000000000000
+      internalID: -8618450305876271041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Green_onion_cut_0: -5646422513350543107
+      Green_onion_cut_1: -3655044422159073507
+      Green_onion_cut_10: 7020131855695054113
+      Green_onion_cut_11: -8618450305876271041
+      Green_onion_cut_2: 7423547682162634671
+      Green_onion_cut_3: 3234889667067479529
+      Green_onion_cut_4: 3143850769599946580
+      Green_onion_cut_5: -5074486898681425553
+      Green_onion_cut_6: -5608354936828555009
+      Green_onion_cut_7: -3324523961816911256
+      Green_onion_cut_8: 2627858933160170970
+      Green_onion_cut_9: 954803059268652144
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
