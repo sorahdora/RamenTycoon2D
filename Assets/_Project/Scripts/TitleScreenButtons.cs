@@ -29,7 +29,10 @@ public class TitleScreenButtons : MonoBehaviour
         }
     }
 
-
+    public void StartGame()
+    {
+        SceneManager.LoadScene("RamenGame");
+    }
     public void ToggleVolumePanel()
     {
         if (howToPanel != null)

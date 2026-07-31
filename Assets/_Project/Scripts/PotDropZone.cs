@@ -10,6 +10,9 @@ public class PotDropZone : MonoBehaviour, IDropHandler
     public AudioClip eggCrackSound;
     public AudioClip knifeSound;
     public AudioClip waterBoilingSound;
+    public AudioClip serveBellSound;
+    public AudioClip coinEarnSound;
+    public AudioClip errorSound;
 
     public GameObject waterLayer;
     public GameObject powderLayer;
@@ -68,6 +71,11 @@ public class PotDropZone : MonoBehaviour, IDropHandler
                 burnTimer = 0f;
 
                 readyText.SetActive(true);
+
+                if (soundEffects != null && serveBellSound != null)
+                {
+                    soundEffects.PlayOneShot(serveBellSound);
+                }
 
                 Debug.Log(gameObject.name + " is READY!");
             }
@@ -135,6 +143,7 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         if (hasWater)
         {
             Debug.Log("This pot already has water.");
+            PlayErrorSound();
             return;
         }
 
@@ -152,12 +161,14 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         if (!hasWater)
         {
             Debug.Log("Add water first!");
+            PlayErrorSound();
             return;
         }
 
         if (hasPowder)
         {
             Debug.Log("This pot already has powder.");
+            PlayErrorSound();
             return;
         }
 
@@ -172,12 +183,14 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         if (!hasPowder)
         {
             Debug.Log("Add powder first!");
+            PlayErrorSound();
             return;
         }
 
         if (hasNoodle)
         {
             Debug.Log("This pot already has noodles.");
+            PlayErrorSound();
             return;
         }
 
@@ -192,12 +205,14 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         if (!hasNoodle)
         {
             Debug.Log("Add noodles first!");
+            PlayErrorSound();
             return;
         }
 
         if (hasEgg)
         {
             Debug.Log("This pot already has an egg.");
+            PlayErrorSound();
             return;
         }
 
@@ -215,12 +230,14 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         if (!hasEgg)
         {
             Debug.Log("Add an egg first!");
+            PlayErrorSound();
             return;
         }
 
         if (hasGreenOnion)
         {
             Debug.Log("This pot already has green onion.");
+            PlayErrorSound();
             return;
         }
 
@@ -258,6 +275,11 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         if (gameManager != null)
         {
             gameManager.AddMoney(1);
+        }
+
+        if (soundEffects != null && coinEarnSound != null)
+        {
+            soundEffects.PlayOneShot(coinEarnSound);
         }
 
         Debug.Log(gameObject.name + " was served! +$1");
@@ -322,5 +344,12 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         }
 
         Debug.Log(gameObject.name + " has been reset.");
+    }
+    private void PlayErrorSound()
+    {
+        if (soundEffects != null && errorSound != null)
+        {
+            soundEffects.PlayOneShot(errorSound);
+        }
     }
 }
