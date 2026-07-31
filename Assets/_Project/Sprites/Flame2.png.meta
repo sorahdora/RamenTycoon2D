@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: bb9feed5842b19548b42cccdbfd84702
+guid: d27f99376db9dc04883f61d192183638
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2297573365535444368
-    second: Base_powder_0
+      213: -1408598656743432812
+    second: Flame2_0
+  - first:
+      213: 9005879121599873377
+    second: Flame2_1
+  - first:
+      213: 439255929510822786
+    second: Flame2_2
+  - first:
+      213: 6067295154053865169
+    second: Flame2_3
+  - first:
+      213: -3522144792667265255
+    second: Flame2_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Base_powder_0
+      name: Flame2_0
       rect:
         serializedVersion: 2
-        x: 414
-        y: 1264
-        width: 1164
-        height: 593
+        x: 869
+        y: 1476
+        width: 34
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0727cd572316d10e0800000000000000
-      internalID: -2297573365535444368
+      spriteID: 49d17b91cf6a37ce0800000000000000
+      internalID: -1408598656743432812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame2_1
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1334
+        width: 99
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161411d885f4bfc70800000000000000
+      internalID: 9005879121599873377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame2_2
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1216
+        width: 99
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2830afbc0fc881600800000000000000
+      internalID: 439255929510822786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame2_3
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1133
+        width: 99
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de54d4fbcc533450800000000000000
+      internalID: 6067295154053865169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame2_4
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 1251
+        width: 99
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9176391e8f3de1fc0800000000000000
+      internalID: -3522144792667265255
       vertices: []
       indices: 
       edges: []
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Base_powder_0: -2297573365535444368
+      Flame2_0: -1408598656743432812
+      Flame2_1: 9005879121599873377
+      Flame2_2: 439255929510822786
+      Flame2_3: 6067295154053865169
+      Flame2_4: -3522144792667265255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bb9feed5842b19548b42cccdbfd84702
+guid: b67a57d8703d69948a584125b86593e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2297573365535444368
-    second: Base_powder_0
+      213: -8348536425000926015
+    second: Stove_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Base_powder_0
+      name: Stove_0
       rect:
         serializedVersion: 2
-        x: 414
-        y: 1264
-        width: 1164
-        height: 593
+        x: 238
+        y: 449
+        width: 2285
+        height: 1283
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0727cd572316d10e0800000000000000
-      internalID: -2297573365535444368
+      spriteID: 1c409699a5a042c80800000000000000
+      internalID: -8348536425000926015
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Base_powder_0: -2297573365535444368
+      Stove_0: -8348536425000926015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
