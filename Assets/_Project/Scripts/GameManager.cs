@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public TMP_Text timerText;
     public TMP_Text moneyText;
+    public AudioSource gameplayMusic;
 
     public float gameDuration = 60f;
     public int targetMoney = 10;
@@ -19,6 +20,11 @@ public class GameManager : MonoBehaviour
         remainingTime = gameDuration;
         UpdateMoneyText();
         UpdateTimerText();
+
+        if (gameplayMusic != null)
+        {
+            gameplayMusic.pitch = 1f;
+        }
     }
 
     void Update()
@@ -37,6 +43,7 @@ public class GameManager : MonoBehaviour
         }
 
         UpdateTimerText();
+        UpdateMusicSpeed();
     }
 
     void UpdateTimerText()
@@ -48,6 +55,24 @@ public class GameManager : MonoBehaviour
     void UpdateMoneyText()
     {
         moneyText.text = "MONEY: $" + currentMoney;
+    }
+    void UpdateMusicSpeed()
+    {
+        if (gameplayMusic == null)
+        {
+            return;
+        }
+
+        if (remainingTime <= 15f && remainingTime > 0f)
+        {
+            float progress = 1f - (remainingTime / 15f);
+
+            gameplayMusic.pitch = Mathf.Lerp(1f, 1.5f, progress);
+        }
+        else
+        {
+            gameplayMusic.pitch = 1f;
+        }
     }
 
     public void AddMoney(int amount)

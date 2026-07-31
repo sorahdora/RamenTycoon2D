@@ -6,6 +6,11 @@ public class PotDropZone : MonoBehaviour, IDropHandler
 {
     public GameManager gameManager;
 
+    public AudioSource soundEffects;
+    public AudioClip eggCrackSound;
+    public AudioClip knifeSound;
+    public AudioClip waterBoilingSound;
+
     public GameObject waterLayer;
     public GameObject powderLayer;
     public GameObject noodleLayer;
@@ -135,6 +140,11 @@ public class PotDropZone : MonoBehaviour, IDropHandler
 
         hasWater = true;
         waterLayer.SetActive(true);
+
+        if (soundEffects != null && waterBoilingSound != null)
+        {
+            soundEffects.PlayOneShot(waterBoilingSound);
+        }
     }
 
     private void AddPowder()
@@ -193,13 +203,18 @@ public class PotDropZone : MonoBehaviour, IDropHandler
 
         hasEgg = true;
         eggLayer.SetActive(true);
+
+        if (soundEffects != null && eggCrackSound != null)
+        {
+            soundEffects.PlayOneShot(eggCrackSound);
+        }
     }
 
     private void AddGreenOnion()
     {
         if (!hasEgg)
         {
-            Debug.Log("Add egg first!");
+            Debug.Log("Add an egg first!");
             return;
         }
 
@@ -212,10 +227,13 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         hasGreenOnion = true;
         greenOnionLayer.SetActive(true);
 
+        if (soundEffects != null && knifeSound != null)
+        {
+            soundEffects.PlayOneShot(knifeSound);
+        }
+
         isCookingFinalStep = true;
         readyTimer = 0f;
-
-        Debug.Log(gameObject.name + " final cooking started!");
     }
 
     public void TryServeRamen()

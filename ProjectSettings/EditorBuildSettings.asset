@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 071cb0e36e050b34a85d826a6f7d0975
+  - enabled: 1
     path: Assets/Scenes/RamenGame.unity
     guid: bd433a77661ffa541a08c1f86299438c
   - enabled: 1
