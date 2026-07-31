@@ -4,12 +4,16 @@ using UnityEngine.UI;
 
 public class PotDropZone : MonoBehaviour, IDropHandler
 {
+    public GameManager gameManager;
+
     public GameObject waterLayer;
     public GameObject powderLayer;
     public GameObject noodleLayer;
     public GameObject eggLayer;
     public GameObject greenOnionLayer;
+    public GameObject readyText;
 
+    public float readyDelay = 3f;
     public float burnDelay = 5f;
 
     private bool hasWater;
@@ -18,37 +22,74 @@ public class PotDropZone : MonoBehaviour, IDropHandler
     private bool hasEgg;
     private bool hasGreenOnion;
 
-    private bool isComplete;
+    private bool isCookingFinalStep;
+    private bool isReady;
     private bool isBurned;
-    private float completeTimer;
+
+    private float readyTimer;
+    private float burnTimer;
 
     private Image potImage;
 
+    private DraggablePot draggablePot;
 
     void Awake()
     {
         potImage = GetComponent<Image>();
+        draggablePot = GetComponent<DraggablePot>();
     }
 
     void Update()
     {
-        if (!isComplete || isBurned)
+        if (isBurned)
         {
             return;
         }
 
-        completeTimer += Time.deltaTime;
-
-        if (completeTimer >= burnDelay)
+        
+        if (draggablePot == null || !draggablePot.IsOnBurner)
         {
-            BurnRamen();
+            return;
+        }
+
+        if (isCookingFinalStep)
+        {
+            readyTimer += Time.deltaTime;
+
+            if (readyTimer >= readyDelay)
+            {
+                isCookingFinalStep = false;
+                isReady = true;
+                burnTimer = 0f;
+
+                readyText.SetActive(true);
+
+                Debug.Log(gameObject.name + " is READY!");
+            }
+        }
+
+        if (isReady)
+        {
+            burnTimer += Time.deltaTime;
+
+            if (burnTimer >= burnDelay)
+            {
+                BurnRamen();
+            }
         }
     }
 
+
     public void OnDrop(PointerEventData eventData)
     {
-        if (isBurned)
+        if (isBurned || isReady || isCookingFinalStep)
         {
+            return;
+        }
+
+        if (draggablePot == null || !draggablePot.IsOnBurner)
+        {
+            Debug.Log("Place the pot on a burner first!");
             return;
         }
 
@@ -171,15 +212,48 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         hasGreenOnion = true;
         greenOnionLayer.SetActive(true);
 
-        isComplete = true;
-        completeTimer = 0f;
+        isCookingFinalStep = true;
+        readyTimer = 0f;
 
-        Debug.Log(gameObject.name + " is READY!");
+        Debug.Log(gameObject.name + " final cooking started!");
+    }
+
+    public void TryServeRamen()
+    {
+        if (isBurned)
+        {
+            Debug.Log("Burned ramen cannot be served.");
+            return;
+        }
+
+        if (!isReady)
+        {
+            Debug.Log("The ramen is not ready yet!");
+            return;
+        }
+
+        isReady = false;
+        isCookingFinalStep = false;
+
+        readyText.SetActive(false);
+
+        if (gameManager != null)
+        {
+            gameManager.AddMoney(1);
+        }
+
+        Debug.Log(gameObject.name + " was served! +$1");
+
+        ResetPot();
     }
 
     private void BurnRamen()
     {
         isBurned = true;
+        isReady = false;
+        isCookingFinalStep = false;
+
+        readyText.SetActive(false);
 
         potImage.color = new Color(0.25f, 0.25f, 0.25f, 1f);
 
@@ -192,8 +266,10 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         }
 
         Debug.Log(gameObject.name + " is BURNED!");
+
         Invoke(nameof(ResetPot), 2f);
     }
+
     private void ResetPot()
     {
         hasWater = false;
@@ -202,15 +278,19 @@ public class PotDropZone : MonoBehaviour, IDropHandler
         hasEgg = false;
         hasGreenOnion = false;
 
-        isComplete = false;
+        isCookingFinalStep = false;
+        isReady = false;
         isBurned = false;
-        completeTimer = 0f;
+
+        readyTimer = 0f;
+        burnTimer = 0f;
 
         waterLayer.SetActive(false);
         powderLayer.SetActive(false);
         noodleLayer.SetActive(false);
         eggLayer.SetActive(false);
         greenOnionLayer.SetActive(false);
+        readyText.SetActive(false);
 
         potImage.color = Color.white;
 

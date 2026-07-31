@@ -14,6 +14,9 @@ public class DraggablePot : MonoBehaviour,
 
     public float snapDistance = 180f;
 
+    
+    public bool IsOnBurner { get; private set; }
+
     private RectTransform rectTransform;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
@@ -36,6 +39,8 @@ public class DraggablePot : MonoBehaviour,
         }
 
         originalPosition = rectTransform.anchoredPosition;
+
+        IsOnBurner = false;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -44,6 +49,9 @@ public class DraggablePot : MonoBehaviour,
 
         canvasGroup.alpha = 0.8f;
         canvasGroup.blocksRaycasts = false;
+
+        
+        IsOnBurner = false;
 
         if (leftPot == this)
         {
@@ -86,6 +94,8 @@ public class DraggablePot : MonoBehaviour,
 
             leftPot = this;
             leftFlame.SetActive(true);
+
+            IsOnBurner = true;
         }
         else if (rightDistance <= snapDistance && rightPot == null)
         {
@@ -94,10 +104,14 @@ public class DraggablePot : MonoBehaviour,
 
             rightPot = this;
             rightFlame.SetActive(true);
+
+            IsOnBurner = true;
         }
         else
         {
             rectTransform.anchoredPosition = originalPosition;
+
+            IsOnBurner = false;
         }
     }
 }

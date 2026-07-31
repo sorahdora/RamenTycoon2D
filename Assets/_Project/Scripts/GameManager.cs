@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -58,6 +59,8 @@ public class GameManager : MonoBehaviour
 
         currentMoney += amount;
         UpdateMoneyText();
+
+        Debug.Log("Money increased! Current money: $" + currentMoney);
     }
 
     void EndGame()
@@ -66,11 +69,11 @@ public class GameManager : MonoBehaviour
 
         if (currentMoney >= targetMoney)
         {
-            Debug.Log("YOU WIN!");
+            SceneManager.LoadScene("WinScene");
         }
         else
         {
-            Debug.Log("YOU LOSE!");
+            SceneManager.LoadScene("LoseScene");
         }
     }
 }
