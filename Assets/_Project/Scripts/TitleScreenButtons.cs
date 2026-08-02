@@ -31,7 +31,7 @@ public class TitleScreenButtons : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("RamenGame");
+        SceneManager.LoadScene("RamyunGame");
     }
     public void ToggleVolumePanel()
     {

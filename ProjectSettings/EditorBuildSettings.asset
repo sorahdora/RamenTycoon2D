@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 071cb0e36e050b34a85d826a6f7d0975
   - enabled: 1
-    path: Assets/Scenes/RamenGame.unity
+    path: Assets/Scenes/RamyunGame.unity
     guid: bd433a77661ffa541a08c1f86299438c
   - enabled: 1
     path: Assets/Scenes/LoseScene.unity
