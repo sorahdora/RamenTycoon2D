@@ -5,7 +5,7 @@ public class LoseScreenButtons : MonoBehaviour
 {
     public void RetryGame()
     {
-        SceneManager.LoadScene("RamenGame");
+        SceneManager.LoadScene("RamyunGame");
     }
 
     public void ExitGame()
